@@ -1,6 +1,6 @@
 :root {
   --primary: #2a1e16;
-  --secondary: #473529;
+  --secondary: #35271e;
 }
 .slider {
   position: fixed;
@@ -9,7 +9,7 @@
   font-family: "Urbanist", Sans-serif;
   font-weight: 600;
   font-size: 20px;
-  color: #fff;
+  color: whitesmoke;
   padding: 1rem;
 }
 
@@ -87,5 +87,5 @@
 
 .tabs .tab.active {
   background-color: whitesmoke;
-  color: var(--primary);
+  color: black;
 }
