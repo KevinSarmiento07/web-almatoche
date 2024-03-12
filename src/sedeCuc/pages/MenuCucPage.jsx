@@ -228,7 +228,7 @@ export const MenuCucPage = () => {
 
         <MenuWafles title={data.wafles.title} items={data.wafles.items} />
 
-        <MenuSaludable />
+        <MenuSaludable title={data.saludable.title} items={data.saludable.items} batidos={data.saludable.batidos} />
       </div>
     </div>
   );
