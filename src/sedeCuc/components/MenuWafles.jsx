@@ -1,5 +1,5 @@
 import Paper from "@mui/material/Paper";
-import { Card, CardContent, IconButton, Stack, Typography } from "@mui/material";
+import { Card, CardContent, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 /* eslint-disable react/prop-types */
 

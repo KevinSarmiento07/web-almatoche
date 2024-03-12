@@ -20,10 +20,10 @@ export const NavBarCuc = () => {
   return (
     <div className="slider">
       <ul className="tabs">
-        <li className="tab">
+        <li className="tab active">
           <a href="#conHelado">Con Helado</a>
         </li>
-        <li className="tab active">En Copas</li>
+        <li className="tab ">En Copas</li>
         <li className="tab">Malteadas</li>
         <li className="tab">Ensaladas de Frutas</li>
         <li className="tab">
