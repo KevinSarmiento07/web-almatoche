@@ -15,12 +15,12 @@ const Item = styled(Paper)(({ theme }) => ({
 export const MenuEnsFrutas = ({ title, description, fruits = [], items = [] }) => {
   return (
     <div id="ensFrutas" className="mt-14">
-      <div className="text-start my-3 bg-[#f8c82c] w-max py-1 px-2 rounded-lg">
+      <div className=" text-start my-3 bg-[#f8c82c] w-max py-1 px-2 rounded-lg">
         <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={800} color={"black"}>
           {title}
         </Typography>
       </div>
-      <div className="text-start my-3 bg-[#f8c82c] w-max py-1 px-2 rounded-lg w-auto">
+      <div className="w-auto text-start my-3 bg-[#f8c82c]  py-1 px-2 rounded-lg ">
         <Typography variant="h6" fontFamily={"'Poppins', sans-serif"} color={"black"}>
           {description}
         </Typography>
