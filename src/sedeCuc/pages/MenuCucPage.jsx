@@ -1,8 +1,11 @@
 import { NavBarCuc } from "../components/NavBarCuc";
 import "../components/styles/MenuCucPage.css";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import { MenuConHelado } from "../components/MenuConHelado";
+import { MenuEnCopas } from "../components/MenuEnCopas";
+import { MenuMalteadas } from "../components/MenuMalteadas";
+import { MenuEnsFrutas } from "../components/MenuEnsFrutas";
+import { MenuWafles } from "../components/MenuWafles";
+import { MenuSaludable } from "../components/MenuSaludable";
 
 export const MenuCucPage = () => {
   const data = {
@@ -139,16 +142,35 @@ export const MenuCucPage = () => {
           name: "Waffle Ármalo Como Quieras",
           description: "Con tres sencillos pasos tendrás el waffle perfecto:",
           price: 16900,
+          steps: [
+            {
+              name: "PASO 1",
+              description: "(Elige una salsa)",
+              items: ["Arequipe", "Mora", "Avellana", "Leche Condensada"],
+            },
+            {
+              name: "PASO 2",
+              description: "(Elige dos frutas)",
+              items: ["Banano", "Mango", "Fresa", "Durazno"],
+            },
+            {
+              name: "PASO 3",
+              description: "(Elige un helado)",
+              items: ["Vainilla", "Fresa", "Mora", "Arequipe", "Macadamia", "Chocolate", "Maracuyá", "Mandarina"],
+            },
+          ],
         },
         {
           name: "Waffle Clasico",
           description: "Waffle, una bola de helado de preferencia y elige una salsa (arequipe, mora, chocolate, avellana o leche condensada).",
           price: 14900,
+          steps: [],
         },
         {
           name: "Waffle Toche",
           description: "Waffle, avellana, helado de preferencia, fresa, banano y lluvia de galleta oreo triturada",
           price: 18900,
+          steps: [],
         },
       ],
     },
@@ -196,118 +218,17 @@ export const MenuCucPage = () => {
       <NavBarCuc />
 
       <div className="mx-4 mt-24 mb-52">
-        <div id="conHelado">
-          <div className="text-start my-3 bg-[#f8c82c] w-max py-1 px-2 rounded-lg">
-            <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={800} color={"black"}>
-              {data.conHelado.title}
-            </Typography>
-          </div>
-          <div className=" flex flex-wrap gap-4 grid sm:grid-cols-2 ">
-            {data.conHelado.items.map((item, index) => {
-              const { name, description, price } = item;
-              return (
-                <div className="min-h-36" key={index}>
-                  <Card sx={{ display: "flex", height: "100%", backgroundColor: "#f8c82c", color: "black" }}>
-                    <div className="flex flex-column text-start">
-                      <CardContent style={{ paddingBottom: 0 }}>
-                        <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
-                          {name}
-                        </Typography>
-                        <Typography variant="subtitle1" component="div" fontFamily={"'Poppins', sans-serif"} sx={{ color: "#001" }}>
-                          {description}
-                        </Typography>
-                        <Typography variant="h6" fontFamily={"'Poppins', sans-serif"} fontWeight={"bold"}>
-                          $ {price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
-                        </Typography>
-                      </CardContent>
-                    </div>
-                  </Card>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        <div id="enCopas" className="mt-14">
-          <div className="text-start my-3 bg-[#f8c82c] w-max py-1 px-2 rounded-lg">
-            <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={800} color={"black"}>
-              {data.enCopas.title}
-            </Typography>
-          </div>
-          <div className=" flex flex-wrap gap-4 grid sm:grid-cols-2 ">
-            {data.enCopas.items.map((item, index) => {
-              const { name, description, price } = item;
-              return (
-                <div className="min-h-36" key={index}>
-                  <Card sx={{ display: "flex", height: "100%", backgroundColor: "#f8c82c", color: "black" }}>
-                    <div className="flex flex-column text-start">
-                      <CardContent style={{ paddingBottom: 0 }}>
-                        <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
-                          {name}
-                        </Typography>
-                        <Typography variant="subtitle1" component="div" fontFamily={"'Poppins', sans-serif"} sx={{ color: "#001" }}>
-                          {description}
-                        </Typography>
-                        <Typography variant="h6" fontFamily={"'Poppins', sans-serif"} fontWeight={"bold"}>
-                          $ {price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
-                        </Typography>
-                      </CardContent>
-                    </div>
-                  </Card>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        <MenuConHelado title={data.conHelado.title} items={data.conHelado.items} />
 
-        <div id="malteadas" className="mt-14">
-          <div className="text-start my-3 bg-[#f8c82c] w-max py-1 px-2 rounded-lg">
-            <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={800} color={"black"}>
-              {data.malteadas.title}
-            </Typography>
-          </div>
-          <div className="my-3">
-            <div className="min-h-36 ">
-              <Card sx={{ display: "flex", height: "100%", backgroundColor: "#f8c82c", color: "black" }}>
-                <div className="flex flex-column text-start">
-                  <CardContent style={{ paddingBottom: 0 }}>
-                    <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
-                      {data.malteadas.title}
-                    </Typography>
-                    <Typography variant="subtitle1" component="div" fontFamily={"'Poppins', sans-serif"} sx={{ color: "#001" }}>
-                      {data.malteadas.description}
-                    </Typography>
-                    <Typography variant="h6" fontFamily={"'Poppins', sans-serif"} fontWeight={"bold"}>
-                      $ {data.malteadas.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
-                    </Typography>
-                  </CardContent>
-                </div>
-              </Card>
-            </div>
-          </div>
-          <div className="text-start my-3  bg-[#f8c82c] w-max py-1 px-2 rounded-lg">
-            <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={400} color={"black"}>
-              TIPOS DE MALTEADAS:
-            </Typography>
-          </div>
-          <div className=" flex flex-wrap gap-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            {data.malteadas.items.map((item, index) => {
-              const { name } = item;
-              return (
-                <div className=" grid" key={index}>
-                  <Card sx={{ display: "flex", height: "100%", backgroundColor: "#f8c82c", color: "black" }}>
-                    <div className="flex flex-column text-start">
-                      <CardContent>
-                        <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
-                          {name}
-                        </Typography>
-                      </CardContent>
-                    </div>
-                  </Card>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        <MenuEnCopas title={data.enCopas.title} items={data.enCopas.items} />
+
+        <MenuMalteadas title={data.malteadas.title} price={data.malteadas.price} items={data.malteadas.items} description={data.malteadas.description} />
+
+        <MenuEnsFrutas title={data.ensaladaDeFrutas.title} description={data.ensaladaDeFrutas.description} fruits={data.ensaladaDeFrutas.fruits} items={data.ensaladaDeFrutas.items} />
+
+        <MenuWafles title={data.wafles.title} items={data.wafles.items} />
+
+        <MenuSaludable />
       </div>
     </div>
   );
