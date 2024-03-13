@@ -27,7 +27,7 @@ export const NavBarCuc = () => {
     if (section) {
       section.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
       });
       setTimeout(callback, 500);
     }
