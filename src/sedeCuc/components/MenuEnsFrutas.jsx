@@ -3,15 +3,6 @@ import Paper from "@mui/material/Paper";
 import { Card, CardContent, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: "#FCE480",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: "black",
-  flexGrow: 1,
-}));
-
 export const MenuEnsFrutas = ({ title, description, fruits = [], items = [] }) => {
   return (
     <div id="ensFrutas" className="mt-14">
@@ -27,11 +18,21 @@ export const MenuEnsFrutas = ({ title, description, fruits = [], items = [] }) =
         <div>
           <Stack spacing={{ xs: 1, sm: 2 }} direction="row" useFlexGap flexWrap="wrap">
             {fruits.map((fruit, index) => {
-              return (
-                <Item elevation={4} key={index}>
+              if (fruits.length === index + 1) {
+                return (
+                  <Typography variant="subtitle2" fontWeight={"bold"} key={index}>
+                    {fruit}
+                  </Typography>
+                );
+              }
+              return [
+                <Typography key={index} variant="subtitle2" fontWeight={"bold"}>
                   {fruit}
-                </Item>
-              );
+                </Typography>,
+                <Typography key={index + "_separator"} variant="subtitle2" fontWeight={"bold"}>
+                  -
+                </Typography>,
+              ];
             })}
           </Stack>
         </div>
