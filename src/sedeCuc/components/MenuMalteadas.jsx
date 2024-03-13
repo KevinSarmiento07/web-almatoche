@@ -4,14 +4,14 @@ import { Card, CardContent, Typography } from "@mui/material";
 export const MenuMalteadas = ({ title, description, price, items = [] }) => {
   return (
     <div id="malteadas" className="mt-14">
-      <div className="text-start my-3 bg-[#f8c82c] w-max py-1 px-2 rounded-lg">
+      <div className="text-start my-3 bg-[#FCE480] w-max py-1 px-2 rounded-lg">
         <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={800} color={"black"}>
           {title}
         </Typography>
       </div>
       <div className="my-3">
         <div className="min-h-36 ">
-          <Card sx={{ display: "flex", height: "100%", backgroundColor: "#f8c82c", color: "black" }}>
+          <Card sx={{ display: "flex", height: "100%", backgroundColor: "#FCE480", color: "black" }}>
             <div className="flex flex-column text-start">
               <CardContent style={{ paddingBottom: 0 }}>
                 <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
@@ -28,7 +28,7 @@ export const MenuMalteadas = ({ title, description, price, items = [] }) => {
           </Card>
         </div>
       </div>
-      <div className="text-start my-3  bg-[#f8c82c] w-max py-1 px-2 rounded-lg">
+      <div className="text-start my-3  bg-[#FCE480] w-max py-1 px-2 rounded-lg">
         <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={400} color={"black"}>
           TIPOS DE MALTEADAS:
         </Typography>
@@ -38,7 +38,7 @@ export const MenuMalteadas = ({ title, description, price, items = [] }) => {
           const { name } = item;
           return (
             <div className=" grid" key={index}>
-              <Card sx={{ display: "flex", height: "100%", backgroundColor: "#f8c82c", color: "black" }}>
+              <Card sx={{ display: "flex", height: "100%", backgroundColor: "#FCE480", color: "black" }}>
                 <div className="flex flex-column text-start">
                   <CardContent>
                     <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>

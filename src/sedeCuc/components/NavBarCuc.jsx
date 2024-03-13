@@ -6,35 +6,60 @@ export const NavBarCuc = () => {
 
     let badges = tab?.querySelectorAll(".tab");
     badges?.forEach((badge) => {
-      badge.addEventListener("click", () => {
+      badge.addEventListener("click", (event) => {
+        event.preventDefault();
+        const sectionId = badge.getAttribute("name");
         tab.querySelector(".active").classList.remove("active");
         badge.classList.add("active");
 
-        badge.scrollIntoView({
-          inline: "center",
-          block: "center",
+        scrollToSection(sectionId, () => {
+          badge.scrollIntoView({
+            inline: "center",
+            behavior: "smooth",
+          });
         });
       });
     });
   }, []);
+
+  function scrollToSection(sectionId, callback) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+      setTimeout(callback, 500);
+    }
+  }
+
   return (
     <div className="slider">
       <ul className="tabs">
-        <li className="tab active">
-          <a href="#conHelado">Con Helado</a>
+        <li className="tab active" name="conHelado">
+          CON HELADO
         </li>
-        <li className="tab ">En Copas</li>
-        <li className="tab">Malteadas</li>
-        <li className="tab">Ensaladas de Frutas</li>
-        <li className="tab">
-          <a href="#wafles">Wafles</a>
+        <li className="tab " name="enCopas">
+          EN COPAS
         </li>
-        <li className="tab">Saludable</li>
-        <li className="tab">Adiciones</li>
-        <li className="tab">Jugos Naturales</li>
-        <li className="tab">Refrescantes</li>
-        <li className="tab">Sodas</li>
-        <li className="tab">Otras Bebidas</li>
+        <li className="tab" name="malteadas">
+          MALTEADAS
+        </li>
+        <li className="tab" name="ensFrutas">
+          ENSALADAS DE FRUTAS
+        </li>
+        <li className="tab" name="wafles">
+          WAFLES
+        </li>
+        <li className="tab" name="saludable">
+          SALUDABLE
+        </li>
+        <li className="tab" name="adiciones">
+          ADICIONES
+        </li>
+        <li className="tab" name="bebidas">
+          BEBIDAS
+        </li>
       </ul>
     </div>
   );

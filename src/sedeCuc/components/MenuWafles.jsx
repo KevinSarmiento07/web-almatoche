@@ -13,8 +13,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 export const MenuWafles = ({ title, items = [] }) => {
   return (
-    <div id="enCopas" className="mt-14">
-      <div className="text-start my-3 bg-[#f8c82c] w-max py-1 px-2 rounded-lg">
+    <div id="wafles" className="mt-14">
+      <div className="text-start my-3 bg-[#FCE480] w-max py-1 px-2 rounded-lg">
         <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={800} color={"black"}>
           {title}
         </Typography>
@@ -26,7 +26,7 @@ export const MenuWafles = ({ title, items = [] }) => {
           const heigth = item.steps.length > 0 ? "max-content" : "100%";
           return (
             <div className="min-h-36" key={index} style={{ display: display }}>
-              <Card sx={{ display: "flex", height: heigth, backgroundColor: "#f8c82c", color: "black" }}>
+              <Card sx={{ display: "flex", height: heigth, backgroundColor: "#FCE480", color: "black" }}>
                 <div className="flex flex-column text-start">
                   <CardContent style={{ paddingBottom: 0 }}>
                     <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
@@ -48,7 +48,7 @@ export const MenuWafles = ({ title, items = [] }) => {
                     console.log(value);
                     return (
                       <div key={i} className="my-1">
-                        <Card sx={{ display: "flex", backgroundColor: "#CB9752", width: "100%" }}>
+                        <Card sx={{ display: "flex", backgroundColor: "#FCE480", width: "100%" }}>
                           <div className="flex w-full">
                             <CardContent sx={{ flex: "1 0 auto", minWidth: 155 }}>
                               <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
@@ -58,7 +58,7 @@ export const MenuWafles = ({ title, items = [] }) => {
                                 {value.description}
                               </Typography>
                             </CardContent>
-                            <div className="flex items-center pl-1 pb-1 bg-[#E0AD7D] w-full">
+                            <div className="flex items-center pl-1 pb-1 bg-[#FCE480] w-full">
                               <Stack spacing={{ xs: 1, sm: 2 }} direction="row" useFlexGap flexWrap="wrap">
                                 {value.items.map((value, j) => {
                                   return (

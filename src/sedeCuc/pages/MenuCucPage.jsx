@@ -115,9 +115,6 @@ export const MenuCucPage = () => {
         {
           name: "Avellana",
         },
-        {
-          name: "LLanera (Pan de Arroz)",
-        },
       ],
     },
     ensaladaDeFrutas: {
