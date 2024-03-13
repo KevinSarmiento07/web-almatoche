@@ -4,7 +4,7 @@ import { Card, CardContent, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: "#fff",
+  backgroundColor: "#f8c82c",
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: "center",
@@ -27,7 +27,11 @@ export const MenuEnsFrutas = ({ title, description, fruits = [], items = [] }) =
         <div>
           <Stack spacing={{ xs: 1, sm: 2 }} direction="row" useFlexGap flexWrap="wrap">
             {fruits.map((fruit, index) => {
-              return <Item key={index}>{fruit}</Item>;
+              return (
+                <Item elevation={4} key={index}>
+                  {fruit}
+                </Item>
+              );
             })}
           </Stack>
         </div>

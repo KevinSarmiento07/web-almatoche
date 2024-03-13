@@ -16,13 +16,20 @@ const FooterPage = () => {
           <a className="cursor-pointer w-10 h-10" style={{ backgroundColor: "white", borderRadius: 100, padding: 5 }}>
             <img src="/images/facebook.png" />
           </a>
-
           <a className="cursor-pointer w-10 h-10" style={{ backgroundColor: "white", borderRadius: 100, padding: 5 }}>
             <img src="/images/instagram.png" width={50} />
           </a>
           <a className="cursor-pointer w-10 h-10" style={{ backgroundColor: "white", borderRadius: 100, padding: 5 }}>
             <img src="/images/tik-tok.png" width={50} />
           </a>
+          <a
+            className="cursor-pointer w-10 h-10"
+            href="https://api.whatsapp.com/send/?phone=%2B573052589868&text&type=phone_number&app_absent=0"
+            target="_blank"
+            style={{ backgroundColor: "white", borderRadius: 100, padding: 5 }}
+          >
+            <img src="/images/whatsapp.png" width={50} />
+          </a>{" "}
         </div>
       </Container>
     </Box>

@@ -61,7 +61,11 @@ export const MenuWafles = ({ title, items = [] }) => {
                             <div className="flex items-center pl-1 pb-1 bg-[#E0AD7D] w-full">
                               <Stack spacing={{ xs: 1, sm: 2 }} direction="row" useFlexGap flexWrap="wrap">
                                 {value.items.map((value, j) => {
-                                  return <Item key={j}>{value}</Item>;
+                                  return (
+                                    <Item elevation={4} key={j}>
+                                      {value}
+                                    </Item>
+                                  );
                                 })}
                               </Stack>
                             </div>

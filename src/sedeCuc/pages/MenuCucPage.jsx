@@ -6,6 +6,8 @@ import { MenuMalteadas } from "../components/MenuMalteadas";
 import { MenuEnsFrutas } from "../components/MenuEnsFrutas";
 import { MenuWafles } from "../components/MenuWafles";
 import { MenuSaludable } from "../components/MenuSaludable";
+import { MenuBebidas } from "../components/MenuBebidas";
+import { MenuAdiciones } from "../components/MenuAdiciones";
 
 export const MenuCucPage = () => {
   const data = {
@@ -212,6 +214,146 @@ export const MenuCucPage = () => {
         ],
       },
     },
+    adiciones: {
+      title: "ADICIONES",
+      items: [
+        {
+          name: "Brownie",
+          price: 3000,
+        },
+        {
+          name: "Queso",
+          price: 3500,
+        },
+        {
+          name: "Oreo",
+          price: 3000,
+        },
+        {
+          name: "Helado",
+          price: 3000,
+        },
+        {
+          name: "Fruta",
+          price: 2500,
+        },
+      ],
+    },
+    jugos: {
+      title: "BEBIDAS",
+      naturales: {
+        title: "JUGOS NATURALES",
+        description: "Pide nuestros Jugos Naturales en agua o leche:",
+        fruits: ["Fresa", "Maracuyá", "Lulo", "Banano", "Frutos Rojos", "Mora", "Mango", "Guanabana"],
+        items: [
+          {
+            name: "Personal en agua",
+            description: "Vaso de 16 onz.",
+            price: 6000,
+          },
+          {
+            name: "Personal en leche",
+            description: "Vaso de 16 onz.",
+            price: 7000,
+          },
+          {
+            name: "Jarra en agua",
+            description: "Un litro de jugo natural.",
+            price: 12000,
+          },
+          {
+            name: "Jarra en leche",
+            description: "Un litro de jugo natural.",
+            price: 14000,
+          },
+        ],
+      },
+      refrescantes: {
+        title: "REFRESCANTES",
+        items: [
+          {
+            name: "Limonada",
+            description: "Vaso de 16 onz preparado en agua con limón natural.",
+            price: 5000,
+          },
+          {
+            name: "Granizado en agua*",
+            description: "Vaso de 16 onz. *Se prepara con las mismas frutas de los jugos naturales.",
+            price: 7000,
+          },
+          {
+            name: "Granizado en leche*",
+            description: "Vaso de 16 onz. *Se prepara con las mismas frutas de los jugos naturales.",
+            price: 8000,
+          },
+          {
+            name: "Cerezada",
+            description: "Vaso de 16 onz preparado en agua con limón natural y cerezas en almíbar.",
+            price: 8000,
+          },
+          {
+            name: "Milo Frío",
+            description: "Vaso de 16 onz preparado en leche.",
+            price: 8000,
+          },
+        ],
+      },
+      sodas: {
+        title: "SODAS",
+        items: [
+          {
+            name: "Limonada en Soda",
+            description: "Vaso de 16onz preparada en soda con limónnartural.",
+            price: 8000,
+          },
+          {
+            name: "Hierbabuena en Soda",
+            description: "Vaso de 16onz preparada en soda con limón natural y hojas de la planta reflescante hierbabuena.",
+            price: 8500,
+          },
+          {
+            name: "Cerezada en Soda",
+            description: "Vaso de 16onz preparada en soda con limón natural y cerezas en almíbar.",
+            price: 8900,
+          },
+        ],
+      },
+      other: {
+        title: "OTRAS BEBIDAS",
+        items: [
+          {
+            name: "Agua natural",
+            description: "Pet 600 ml.",
+            price: 8000,
+          },
+          {
+            name: "Agua saborizada / Con Gas",
+            description: "Pet 600 ml.",
+            price: 8500,
+          },
+          {
+            name: "Cola y Pola",
+            description: "Lata de 330 cm³.",
+            price: 8900,
+          },
+          {
+            name: "Cerveza de preferencia",
+            description: "Nacionales, según disponibilidad.",
+            price: 8900,
+          },
+          {
+            name: "Gaseosa Personal",
+            description: "Pet de 400 ml.",
+            price: 8900,
+          },
+          {
+            name: "Gaseosa Familiar",
+            description: "Pet de 1.5 litros.",
+            price: 8900,
+          },
+        ],
+      },
+    },
   };
   return (
     <div>
@@ -229,6 +371,10 @@ export const MenuCucPage = () => {
         <MenuWafles title={data.wafles.title} items={data.wafles.items} />
 
         <MenuSaludable title={data.saludable.title} items={data.saludable.items} batidos={data.saludable.batidos} />
+
+        <MenuAdiciones title={data.adiciones.title} items={data.adiciones.items} />
+
+        <MenuBebidas title={data.jugos.title} naturales={data.jugos.naturales} refrescantes={data.jugos.refrescantes} sodas={data.jugos.sodas} other={data.jugos.other} />
       </div>
     </div>
   );
