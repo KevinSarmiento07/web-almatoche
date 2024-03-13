@@ -17,42 +17,42 @@ export const MenuCucPage = () => {
         {
           name: "Cono Sencillo",
           description: "Cono o vaso de una bola de helado de preferencia.",
-          price: 4000,
+          price: 5000,
         },
         {
           name: "Cono Doble",
           description: "Cono o vaso de dos bolas de helado de preferencia.",
-          price: 7000,
+          price: 8000,
         },
         {
           name: "Cono Kids",
           description: "Una bola de helado de vainilla decorada en forma de ratoncito.",
-          price: 5000,
+          price: 6000,
         },
         {
           name: "Canastilla de Galleta S",
           description: "Dos bolas de helado de preferencia con salsa de preferencia.",
-          price: 7500,
+          price: 8500,
         },
         {
           name: "Canastilla de Galleta M",
           description: "Cono o vaso de dos bolas de helado de preferencia.",
-          price: 11000,
+          price: 12000,
         },
         {
           name: "Canastilla de Galleta con Fruta",
           description: "Dos bolas de helado de preferencia + una fruta de preferencia (banano, fresa, mango, durazno).",
-          price: 9000,
+          price: 11000,
         },
         {
           name: "Brownie con Helado",
           description: "Brownie, helado de vainilla, salsa de chocolate y cereza",
-          price: 9900,
+          price: 10900,
         },
         {
           name: "Banana Split",
           description: "Helado de fresa, vainilla y chocolate, crema chantilly y cerezas.(Adiciona queso por $2.000).",
-          price: 13000,
+          price: 14000,
         },
       ],
     },
@@ -67,7 +67,7 @@ export const MenuCucPage = () => {
         {
           name: "Copa Melocotón",
           description: "Melocotones en almíbar con crema chantilly y dos bolas de helado de macadamia.",
-          price: 11000,
+          price: 12000,
         },
         {
           name: "Copa Toche",
@@ -82,7 +82,7 @@ export const MenuCucPage = () => {
         {
           name: "Fresas con Crema*",
           description: "Cono o vaso de dos bolas de helado de preferencia.",
-          price: 11000,
+          price: 10900,
         },
       ],
     },
@@ -95,16 +95,10 @@ export const MenuCucPage = () => {
           name: "Brownie",
         },
         {
-          name: "Café",
-        },
-        {
           name: "MiniChips",
         },
         {
           name: "Oreo",
-        },
-        {
-          name: "Galaxia Kids",
         },
         {
           name: "Frutos Rojos",
@@ -129,8 +123,8 @@ export const MenuCucPage = () => {
         },
         {
           name: "Ensalada Toche",
-          description: "Una bola de helado de preferenciapara complementar.",
-          price: 17000,
+          description: "Dos bolas de helado de preferencia para complementar.",
+          price: 18000,
         },
       ],
     },
@@ -321,32 +315,32 @@ export const MenuCucPage = () => {
           {
             name: "Agua natural",
             description: "Pet 600 ml.",
-            price: 8000,
+            price: 3000,
           },
           {
             name: "Agua saborizada / Con Gas",
             description: "Pet 600 ml.",
-            price: 8500,
+            price: 3500,
           },
           {
             name: "Cola y Pola",
             description: "Lata de 330 cm³.",
-            price: 8900,
+            price: 4000,
           },
           {
             name: "Cerveza de preferencia",
             description: "Nacionales, según disponibilidad.",
-            price: 8900,
+            price: 5000,
           },
           {
             name: "Gaseosa Personal",
             description: "Pet de 400 ml.",
-            price: 8900,
+            price: 4000,
           },
           {
             name: "Gaseosa Familiar",
             description: "Pet de 1.5 litros.",
-            price: 8900,
+            price: 8000,
           },
         ],
       },
