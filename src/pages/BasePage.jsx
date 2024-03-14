@@ -1,7 +1,6 @@
 import { Typography } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import FooterPage from "./FooterPage";
-
 export const BasePage = () => {
   return (
     <div className="h-full bg-auto bg-center ">
