@@ -45,8 +45,6 @@ export const MenuWafles = ({ title, items = [] }) => {
               {item.steps?.length > 0 ? (
                 <div>
                   {item.steps?.map((value, i) => {
-                    console.log("Entro en el map");
-                    console.log(value);
                     return (
                       <div key={i} className="my-1">
                         <Card sx={{ display: "flex", backgroundColor: "#FCE480", width: "100%" }}>
