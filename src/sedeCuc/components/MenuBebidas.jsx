@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 /* eslint-disable react/prop-types */
 export const MenuBebidas = ({ title, naturales, refrescantes, sodas, other }) => {
@@ -20,6 +20,7 @@ export const MenuBebidas = ({ title, naturales, refrescantes, sodas, other }) =>
           {naturales.description}
         </Typography>
       </div>
+
       <div className=" flex flex-wrap gap-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {naturales.fruits.map((item, index) => {
           return (
@@ -43,7 +44,7 @@ export const MenuBebidas = ({ title, naturales, refrescantes, sodas, other }) =>
           return (
             <div className="min-h-36" key={index}>
               <Card sx={{ display: "flex", height: "100%", backgroundColor: "#FCE480", color: "black" }}>
-                <div className="flex flex-column text-start">
+                <div className="flex flex-column text-start" style={{ width: "-webkit-fill-available" }}>
                   <CardContent style={{ paddingBottom: 0 }}>
                     <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
                       {name}
@@ -56,6 +57,7 @@ export const MenuBebidas = ({ title, naturales, refrescantes, sodas, other }) =>
                     </Typography>
                   </CardContent>
                 </div>
+                {item.image != undefined ? <CardMedia component="img" sx={{ width: 125 }} image={`/images/menu/${item.image}`} alt={item.image} /> : ""}
               </Card>
             </div>
           );
@@ -116,6 +118,7 @@ export const MenuBebidas = ({ title, naturales, refrescantes, sodas, other }) =>
                     </Typography>
                   </CardContent>
                 </div>
+                {item.image != undefined ? <CardMedia component="img" sx={{ width: 125 }} image={`/images/menu/${item.image}`} alt={item.image} /> : ""}
               </Card>
             </div>
           );

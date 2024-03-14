@@ -18,16 +18,19 @@ export const MenuCucPage = () => {
           name: "Cono Sencillo",
           description: "Cono o vaso de una bola de helado de preferencia.",
           price: 5000,
+          image: "conoSencillo.jpg",
         },
         {
           name: "Cono Doble",
           description: "Cono o vaso de dos bolas de helado de preferencia.",
           price: 8000,
+          image: "conoDoble.jpg",
         },
         {
           name: "Cono Kids",
           description: "Una bola de helado de vainilla decorada en forma de ratoncito.",
           price: 6000,
+          image: "conoKids.jpg",
         },
         {
           name: "Canastilla de Galleta S",
@@ -43,16 +46,19 @@ export const MenuCucPage = () => {
           name: "Canastilla de Galleta con Fruta",
           description: "Dos bolas de helado de preferencia + una fruta de preferencia (banano, fresa, mango, durazno).",
           price: 11000,
+          image: "canFruta.jpg",
         },
         {
           name: "Brownie con Helado",
           description: "Brownie, helado de vainilla, salsa de chocolate y cereza",
           price: 10900,
+          image: "browHelado.jpg",
         },
         {
           name: "Banana Split",
           description: "Helado de fresa, vainilla y chocolate, crema chantilly y cerezas.(Adiciona queso por $2.000).",
           price: 14000,
+          image: "banSplit.jpg",
         },
       ],
     },
@@ -63,26 +69,31 @@ export const MenuCucPage = () => {
           name: "Copa Satudary",
           description: "Dos bolas de helado de preferencia, galleta de cono con salsa de chocolate o arequipe.",
           price: 8900,
+          image: "copaSat.jpg",
         },
         {
           name: "Copa Melocotón",
           description: "Melocotones en almíbar con crema chantilly y dos bolas de helado de macadamia.",
           price: 12000,
+          image: "copaMel.jpg",
         },
         {
           name: "Copa Toche",
           description: "Helado de vainilla, maracuyá y mora con fruta (banano, fresa y mango), crema de la casa y crema chantilly.",
           price: 14000,
+          image: "copaToche.jpg",
         },
         {
           name: "Copa Fresas con Queso",
           description: "Fresas, crema chantilly, crema de leche, salsa de frutos rojos y queso.",
           price: 14000,
+          image: "copaFresas.jpg",
         },
         {
           name: "Fresas con Crema*",
           description: "Cono o vaso de dos bolas de helado de preferencia.",
           price: 10900,
+          image: "fresasCrema.jpg",
         },
       ],
     },
@@ -90,6 +101,7 @@ export const MenuCucPage = () => {
       title: "MALTEADAS",
       description: "Todas nuestras malteadas se preparan con 200gr de helado de vainilla y llevan crema chantilly",
       price: 14000,
+      image: "malteada.jpg",
       items: [
         {
           name: "Brownie",
@@ -120,11 +132,13 @@ export const MenuCucPage = () => {
           name: "Ensalada Ligera",
           description: "Una bola de helado de preferenciapara complementar.",
           price: 14900,
+          image: "ensLigera.jpg",
         },
         {
           name: "Ensalada Toche",
           description: "Dos bolas de helado de preferencia para complementar.",
           price: 18000,
+          image: "ensToche.jpg",
         },
       ],
     },
@@ -135,6 +149,7 @@ export const MenuCucPage = () => {
           name: "Waffle Ármalo Como Quieras",
           description: "Con tres sencillos pasos tendrás el waffle perfecto:",
           price: 16900,
+          image: "waflesArm.jpg",
           steps: [
             {
               name: "PASO 1",
@@ -164,6 +179,7 @@ export const MenuCucPage = () => {
           description: "Waffle, avellana, helado de preferencia, fresa, banano y lluvia de galleta oreo triturada",
           price: 18900,
           steps: [],
+          image: "wafleToche.jpg",
         },
       ],
     },
@@ -174,6 +190,7 @@ export const MenuCucPage = () => {
           name: "Ensalada de Frutas con Granola",
           description: "Ensalada de banano, mango, fresa, papaya, melón, arándanos, manzana y kiwi.",
           price: 13000,
+          image: "ensGranola.jpg",
         },
       ],
       batidos: {
@@ -235,6 +252,7 @@ export const MenuCucPage = () => {
       naturales: {
         title: "JUGOS NATURALES",
         description: "Pide nuestros Jugos Naturales en agua o leche:",
+        image: "jugoNat.jpg",
         fruits: ["Fresa", "Maracuyá", "Lulo", "Banano", "Frutos Rojos", "Mora", "Mango", "Guanabana"],
         items: [
           {
@@ -246,11 +264,13 @@ export const MenuCucPage = () => {
             name: "Personal en leche",
             description: "Vaso de 16 onz.",
             price: 7000,
+            image: "jugoLeche.jpg",
           },
           {
             name: "Jarra en agua",
             description: "Un litro de jugo natural.",
             price: 12000,
+            image: "jarraAgua.jpg",
           },
           {
             name: "Jarra en leche",
@@ -296,16 +316,19 @@ export const MenuCucPage = () => {
             name: "Limonada en Soda",
             description: "Vaso de 16onz preparada en soda con limón nartural.",
             price: 8000,
+            image: "sodaLimo.jpg",
           },
           {
             name: "Hierbabuena en Soda",
             description: "Vaso de 16onz preparada en soda con limón natural y hojas de la planta reflescante hierbabuena.",
             price: 8500,
+            image: "sodaLim.jpg",
           },
           {
             name: "Cerezada en Soda",
             description: "Vaso de 16onz preparada en soda con limón natural y cerezas en almíbar.",
             price: 8900,
+            image: "sodaCer.jpg",
           },
         ],
       },
@@ -355,7 +378,7 @@ export const MenuCucPage = () => {
 
         <MenuEnCopas title={data.enCopas.title} items={data.enCopas.items} />
 
-        <MenuMalteadas title={data.malteadas.title} price={data.malteadas.price} items={data.malteadas.items} description={data.malteadas.description} />
+        <MenuMalteadas title={data.malteadas.title} price={data.malteadas.price} items={data.malteadas.items} description={data.malteadas.description} image={data.malteadas.image} />
 
         <MenuEnsFrutas title={data.ensaladaDeFrutas.title} description={data.ensaladaDeFrutas.description} fruits={data.ensaladaDeFrutas.fruits} items={data.ensaladaDeFrutas.items} />
 

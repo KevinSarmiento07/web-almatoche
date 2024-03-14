@@ -1,5 +1,5 @@
 import Paper from "@mui/material/Paper";
-import { Card, CardContent, Stack, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 /* eslint-disable react/prop-types */
 
@@ -40,6 +40,7 @@ export const MenuWafles = ({ title, items = [] }) => {
                     </Typography>
                   </CardContent>
                 </div>
+                {item.image != undefined ? <CardMedia component="img" sx={{ width: 125 }} image={`/images/menu/${item.image}`} alt={item.image} /> : ""}
               </Card>
               {item.steps?.length > 0 ? (
                 <div>

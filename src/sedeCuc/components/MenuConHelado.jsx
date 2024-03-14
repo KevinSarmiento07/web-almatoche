@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 export const MenuConHelado = ({ title, items = [] }) => {
   return (
@@ -28,6 +28,7 @@ export const MenuConHelado = ({ title, items = [] }) => {
                     </Typography>
                   </CardContent>
                 </div>
+                {item.image != undefined ? <CardMedia component="img" sx={{ width: 125 }} image={`/images/menu/${item.image}`} alt={item.image} /> : ""}
               </Card>
             </div>
           );

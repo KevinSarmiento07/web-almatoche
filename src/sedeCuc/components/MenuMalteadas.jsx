@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import { Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
-export const MenuMalteadas = ({ title, description, price, items = [] }) => {
+export const MenuMalteadas = ({ title, description, price, items = [], image }) => {
   return (
     <div id="malteadas" className="mt-14">
       <div className="text-start my-3 bg-[#FCE480] w-max py-1 px-2 rounded-lg">
@@ -25,6 +25,7 @@ export const MenuMalteadas = ({ title, description, price, items = [] }) => {
                 </Typography>
               </CardContent>
             </div>
+            {image != undefined ? <CardMedia component="img" sx={{ width: 125 }} image={`/images/menu/${image}`} alt={image} /> : ""}
           </Card>
         </div>
       </div>
