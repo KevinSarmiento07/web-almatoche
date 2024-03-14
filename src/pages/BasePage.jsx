@@ -8,9 +8,9 @@ export const BasePage = () => {
         <div className=" mx-auto my-5">
           <img src="/images/logo.jpg" className="rounded-full" width={225} height={150} />
         </div>
-        <div>
+        <div className="bg-[#FECE00] rounded-3xl mx-2">
           <Typography variant="h4" fontWeight="bold" color="black">
-            TRABÁJANOS CON EL ALMA 💛
+            TRABAJAMOS CON EL ALMA 🤍
           </Typography>
         </div>
 
