@@ -5,7 +5,7 @@ export const MainPage = () => {
   return (
     <div className="mt-14  mx-auto  w-full h-full">
       <div className="bg-[#FECE00] hover:bg-yellow-400 w-3/6 mx-auto rounded-full mb-5">
-        <NavLink>
+        <NavLink to="/villavicencio">
           <Button fullWidth sx={{ color: "black", fontWeight: "bold" }}>
             SEDE VILLAVICENCIO
           </Button>

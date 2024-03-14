@@ -6,6 +6,8 @@ import { MainCucPage } from "./sedeCuc/pages/MainCucPage";
 import { MenuCucPage } from "./sedeCuc/pages/MenuCucPage";
 import { BaseMenuPage } from "./pages/BaseMenuPage";
 import { useEffect, useState } from "react";
+import { MainVillPage } from "./sedeCuc/pages/MainVillPage";
+import { MenuVillPage } from "./sedeCuc/pages/MenuVillPage";
 
 function App() {
   const location = useLocation();
@@ -24,10 +26,15 @@ function App() {
         <Route path="/" element={<BasePage />}>
           <Route path="/" element={<MainPage></MainPage>}></Route>
           <Route path="/cucuta" element={<MainCucPage />}></Route>
+          <Route path="/villavicencio" element={<MainVillPage />}></Route>
         </Route>
 
         <Route path="/cucuta/menu" element={<BaseMenuPage />}>
           <Route path="/cucuta/menu" element={<MenuCucPage />}></Route>
+        </Route>
+
+        <Route path="/villavicencio/menu" element={<BaseMenuPage />}>
+          <Route path="/villavicencio/menu" element={<MenuVillPage />}></Route>
         </Route>
       </Routes>
     </>

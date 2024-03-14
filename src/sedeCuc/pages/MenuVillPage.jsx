@@ -1,5 +1,3 @@
-import { NavBarCuc } from "../components/NavBarCuc";
-import "../components/styles/MenuCucPage.css";
 import { MenuConHelado } from "../components/MenuConHelado";
 import { MenuEnCopas } from "../components/MenuEnCopas";
 import { MenuMalteadas } from "../components/MenuMalteadas";
@@ -8,8 +6,8 @@ import { MenuWafles } from "../components/MenuWafles";
 import { MenuSaludable } from "../components/MenuSaludable";
 import { MenuBebidas } from "../components/MenuBebidas";
 import { MenuAdiciones } from "../components/MenuAdiciones";
-
-export const MenuCucPage = () => {
+import { NavBarVill } from "../components/NavBarVill";
+export const MenuVillPage = () => {
   const data = {
     conHelado: {
       title: "CON HELADO",
@@ -32,27 +30,32 @@ export const MenuCucPage = () => {
         {
           name: "Canastilla de Galleta S",
           description: "Dos bolas de helado de preferencia con salsa de preferencia.",
-          price: 8500,
+          price: 8000,
         },
         {
           name: "Canastilla de Galleta M",
-          description: "Cono o vaso de dos bolas de helado de preferencia.",
-          price: 12000,
+          description: "Tres bolas de helado de preferencia con salsa de preferencia.",
+          price: 11000,
         },
         {
           name: "Canastilla de Galleta con Fruta",
           description: "Dos bolas de helado de preferencia + una fruta de preferencia (banano, fresa, mango, durazno).",
-          price: 11000,
+          price: 10000,
         },
         {
           name: "Brownie con Helado",
           description: "Brownie, helado de vainilla, salsa de chocolate y cereza",
-          price: 10900,
+          price: 11000,
+        },
+        {
+          name: "Gusanito",
+          description: "Dos bolas de helado de preferencia 3 bolas de helado (vainilla, fresa, chocolate), gomitas y salsas de preferencia.",
+          price: 13000,
         },
         {
           name: "Banana Split",
           description: "Helado de fresa, vainilla y chocolate, crema chantilly y cerezas.(Adiciona queso por $2.000).",
-          price: 14000,
+          price: 13000,
         },
       ],
     },
@@ -67,7 +70,7 @@ export const MenuCucPage = () => {
         {
           name: "Copa Melocotón",
           description: "Melocotones en almíbar con crema chantilly y dos bolas de helado de macadamia.",
-          price: 12000,
+          price: 11000,
         },
         {
           name: "Copa Toche",
@@ -75,14 +78,20 @@ export const MenuCucPage = () => {
           price: 14000,
         },
         {
+          name: "Copa Brownie",
+          description: "2 bolas de helado de vainilla, arequipe, brownie, dulce de frutos rojos, avellana y quipitos.",
+          price: 16000,
+        },
+        {
           name: "Copa Fresas con Queso",
           description: "Fresas, crema chantilly, crema de leche, salsa de frutos rojos y queso.",
-          price: 14000,
+          price: 16000,
         },
+
         {
           name: "Fresas con Crema*",
           description: "Cono o vaso de dos bolas de helado de preferencia.",
-          price: 10900,
+          price: 9900,
         },
       ],
     },
@@ -92,7 +101,19 @@ export const MenuCucPage = () => {
       price: 14000,
       items: [
         {
+          name: "Vainila",
+        },
+        {
           name: "Brownie",
+        },
+        {
+          name: "Café",
+        },
+        {
+          name: "Galaxia Kids",
+        },
+        {
+          name: "Avellana",
         },
         {
           name: "MiniChips",
@@ -104,10 +125,7 @@ export const MenuCucPage = () => {
           name: "Frutos Rojos",
         },
         {
-          name: "Vainila",
-        },
-        {
-          name: "Avellana",
+          name: "Llanera (Pan de Arroz)",
         },
       ],
     },
@@ -119,12 +137,12 @@ export const MenuCucPage = () => {
         {
           name: "Ensalada Ligera",
           description: "Una bola de helado de preferenciapara complementar.",
-          price: 14900,
+          price: 14000,
         },
         {
           name: "Ensalada Toche",
           description: "Dos bolas de helado de preferencia para complementar.",
-          price: 18000,
+          price: 17000,
         },
       ],
     },
@@ -173,7 +191,7 @@ export const MenuCucPage = () => {
         {
           name: "Ensalada de Frutas con Granola",
           description: "Ensalada de banano, mango, fresa, papaya, melón, arándanos, manzana y kiwi.",
-          price: 13000,
+          price: 12000,
         },
       ],
       batidos: {
@@ -196,11 +214,43 @@ export const MenuCucPage = () => {
         size: [
           {
             name: "Batido 16 onz en agua",
-            price: 8000,
+            price: 9500,
           },
           {
             name: "Batido 16 onz en leche",
-            price: 9500,
+            price: 10500,
+          },
+        ],
+      },
+      parfaits: {
+        title: "PARFAITS",
+        description: "Nuestros parfaits con yogurt casero",
+        items: [
+          {
+            name: "Tropical",
+            description: "Fresa - Árandanos - Granola - Banano",
+          },
+          {
+            name: "Tentación",
+            description: "Fresa - Mango - Granola - Banano",
+          },
+          {
+            name: "Toche",
+            description: "Fresa - Árandanos - Granola - Durazno",
+          },
+        ],
+        size: [
+          {
+            name: "Parfaits 14 onz",
+            price: 11000,
+          },
+          {
+            name: "Parfaits 16 onz",
+            price: 13000,
+          },
+          {
+            name: "Smoothie 16 onz con yogurt casero",
+            price: 14000,
           },
         ],
       },
@@ -240,22 +290,22 @@ export const MenuCucPage = () => {
           {
             name: "Personal en agua",
             description: "Vaso de 16 onz.",
-            price: 6000,
+            price: 7000,
           },
           {
             name: "Personal en leche",
             description: "Vaso de 16 onz.",
-            price: 7000,
+            price: 8000,
           },
           {
             name: "Jarra en agua",
             description: "Un litro de jugo natural.",
-            price: 12000,
+            price: 13000,
           },
           {
             name: "Jarra en leche",
             description: "Un litro de jugo natural.",
-            price: 14000,
+            price: 15000,
           },
         ],
       },
@@ -263,23 +313,33 @@ export const MenuCucPage = () => {
         title: "REFRESCANTES",
         items: [
           {
-            name: "Limonada",
+            name: "Cítrica",
             description: "Vaso de 16 onz preparado en agua con limón natural.",
-            price: 5000,
+            price: 6000,
           },
           {
             name: "Granizado en agua*",
             description: "Vaso de 16 onz. *Se prepara con las mismas frutas de los jugos naturales.",
-            price: 7000,
+            price: 8000,
           },
           {
             name: "Granizado en leche*",
             description: "Vaso de 16 onz. *Se prepara con las mismas frutas de los jugos naturales.",
-            price: 8000,
+            price: 9000,
           },
           {
             name: "Cerezada",
             description: "Vaso de 16 onz preparado en agua con limón natural y cerezas en almíbar.",
+            price: 8000,
+          },
+          {
+            name: "Limonada de Coco",
+            description: "Vaso de 16 onz preparado en leche.",
+            price: 8000,
+          },
+          {
+            name: "Piña Colada",
+            description: "Vaso de 16 onz preparado en leche.",
             price: 8000,
           },
           {
@@ -293,7 +353,7 @@ export const MenuCucPage = () => {
         title: "SODAS",
         items: [
           {
-            name: "Limonada en Soda",
+            name: "Cítrica en Soda",
             description: "Vaso de 16onz preparada en soda con limón nartural.",
             price: 8000,
           },
@@ -305,6 +365,11 @@ export const MenuCucPage = () => {
           {
             name: "Cerezada en Soda",
             description: "Vaso de 16onz preparada en soda con limón natural y cerezas en almíbar.",
+            price: 8900,
+          },
+          {
+            name: "Cerezada en Frutos Rojos",
+            description: "Vaso de 16onz preparada en soda con frutos rojos.",
             price: 8900,
           },
         ],
@@ -329,7 +394,7 @@ export const MenuCucPage = () => {
           },
           {
             name: "Cerveza de preferencia",
-            description: "Nacionales, según disponibilidad.",
+            description: "Poker, Aguila, Aguila Light, Club Colombia y Corona.",
             price: 5000,
           },
           {
@@ -348,7 +413,7 @@ export const MenuCucPage = () => {
   };
   return (
     <div>
-      <NavBarCuc />
+      <NavBarVill />
 
       <div className="mx-4 mt-24 mb-52">
         <MenuConHelado title={data.conHelado.title} items={data.conHelado.items} />
@@ -361,7 +426,7 @@ export const MenuCucPage = () => {
 
         <MenuWafles title={data.wafles.title} items={data.wafles.items} />
 
-        <MenuSaludable title={data.saludable.title} items={data.saludable.items} batidos={data.saludable.batidos} />
+        <MenuSaludable title={data.saludable.title} items={data.saludable.items} batidos={data.saludable.batidos} parfaits={data.saludable.parfaits} />
 
         <MenuAdiciones title={data.adiciones.title} items={data.adiciones.items} />
 
