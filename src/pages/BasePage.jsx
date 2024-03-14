@@ -11,7 +11,7 @@ export const BasePage = () => {
         </div>
         <div>
           <Typography variant="h4" fontWeight="bold" color="black">
-            TRABAJAMOS EN EL ALMA 💛
+            TRABÁJANOS CON EL ALMA 💛
           </Typography>
         </div>
 
