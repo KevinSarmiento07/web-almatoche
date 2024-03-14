@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
-import Paper from "@mui/material/Paper";
 import { Card, CardContent, Stack, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
 
 export const MenuEnsFrutas = ({ title, description, fruits = [], items = [] }) => {
   return (

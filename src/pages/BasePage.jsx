@@ -7,10 +7,10 @@ export const BasePage = () => {
     <div className="h-full bg-auto bg-center ">
       <div className="flex flex-col mx-auto h-auto">
         <div className=" mx-auto my-5">
-          <img src="/images/logo.jpg" className="rounded-full" width={300} height={150} />
+          <img src="/images/logo.jpg" className="rounded-full" width={225} height={150} />
         </div>
         <div>
-          <Typography variant="h4" fontWeight="bold" color="white">
+          <Typography variant="h4" fontWeight="bold" color="black">
             TRABAJAMOS EN EL ALMA 💛
           </Typography>
         </div>
