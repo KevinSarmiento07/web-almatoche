@@ -7,6 +7,7 @@ import { MenuSaludable } from "../components/MenuSaludable";
 import { MenuBebidas } from "../components/MenuBebidas";
 import { MenuAdiciones } from "../components/MenuAdiciones";
 import { NavBarVill } from "../components/NavBarVill";
+import { MenuCoffee } from "../components/MenuCoffee";
 export const MenuVillPage = () => {
   const data = {
     conHelado: {
@@ -433,6 +434,59 @@ export const MenuVillPage = () => {
         ],
       },
     },
+    coffee: {
+      title: "COFFEE",
+      clasico: {
+        title: "CLÁSICO",
+        items: [
+          {
+            name: "Expreso",
+            description: "7 gramos de café prensado. Insumo base para los demás productos, de la marca Juan Valdez.",
+            price: 3500,
+          },
+          {
+            name: "Americano",
+            description: "7 gramos de café prensado mezclado con agua caliente.",
+            price: 4000,
+          },
+          {
+            name: "Capuchino",
+            description: "7 gramos de café prensado mezclado con leche entera o deslactosada.",
+            price: 6000,
+          },
+          {
+            name: "Latte",
+            description: "7 gramos de café prensado, mezclado con más proporción de leche entera o deslactosada",
+            price: 6000,
+          },
+        ],
+      },
+      variado: {
+        title: "VARIADO",
+        items: [
+          {
+            name: "Mocaccino",
+            description: "7 gramos de café prensado, mezclado con leche entera o deslactosada y una Chocolatina Jet.",
+            price: 6900,
+          },
+          {
+            name: "Affogato",
+            description: "7 gramos de café prensado, vertido en 2 bolas de helado de vainilla. Elige salsa de Arequipe o chocolate.",
+            price: 9000,
+          },
+          {
+            name: "Granizado",
+            description: "Vaso de 14onz preparado con 13 gramos de café prensado, leche y hielo. Acompañado con crema chantilly y cacao. ",
+            price: 8000,
+          },
+          {
+            name: "Malteada",
+            description: "Vaso de 14onz preparado con 13 gramos de café prensado, leche y 200gr de helado de vainilla. Acompañado con crema chantilly y cacao.",
+            price: 12000,
+          },
+        ],
+      },
+    },
   };
   return (
     <div>
@@ -454,6 +508,8 @@ export const MenuVillPage = () => {
         <MenuAdiciones title={data.adiciones.title} items={data.adiciones.items} />
 
         <MenuBebidas title={data.jugos.title} naturales={data.jugos.naturales} refrescantes={data.jugos.refrescantes} sodas={data.jugos.sodas} other={data.jugos.other} />
+
+        <MenuCoffee title={data.coffee.title} clasico={data.coffee.clasico} variado={data.coffee.variado} />
       </div>
     </div>
   );
