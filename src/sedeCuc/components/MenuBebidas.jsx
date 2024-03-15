@@ -15,10 +15,17 @@ export const MenuBebidas = ({ title, naturales, refrescantes, sodas, other }) =>
         </Typography>
       </div>
 
-      <div className="text-start my-3  bg-[#FCE480] w-auto py-1 px-2 rounded-lg">
-        <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={400} color={"black"}>
-          {naturales.description}
-        </Typography>
+      <div className=" grid my-3">
+        <Card sx={{ display: "flex", height: "100%", backgroundColor: "#FCE480", color: "black" }}>
+          <div className="flex flex-column text-start">
+            <CardContent style={{ paddingTop: 5, paddingBottom: 5 }}>
+              <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
+                {naturales.description}
+              </Typography>
+            </CardContent>
+          </div>
+          {naturales.image != undefined ? <CardMedia component="img" sx={{ width: 125 }} image={`/images/menu/${naturales.image}`} alt={naturales.image} /> : ""}
+        </Card>
       </div>
 
       <div className=" flex flex-wrap gap-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
