@@ -9,7 +9,7 @@ export const MenuSlider = ({ items = [] }) => {
           PRODUCTOS ESTRELLA
         </Typography>
       </div>
-      <Carousel className="SecondExample w-full h-80 h-[390px]" duration={100} navButtonsAlwaysVisible>
+      <Carousel className="SecondExample w-full  h-[390px] md:h-[500px]" duration={100} navButtonsAlwaysVisible>
         {items.map((item, index) => {
           return <Project item={item} key={index} />;
         })}
