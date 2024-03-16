@@ -8,6 +8,7 @@ import { MenuWafles } from "../components/MenuWafles";
 import { MenuSaludable } from "../components/MenuSaludable";
 import { MenuBebidas } from "../components/MenuBebidas";
 import { MenuAdiciones } from "../components/MenuAdiciones";
+import { MenuSlider } from "../components/MenuSlider";
 
 export const MenuCucPage = () => {
   const data = {
@@ -369,11 +370,27 @@ export const MenuCucPage = () => {
       },
     },
   };
+
+  const slider = [
+    {
+      name: "ENSALADA TOCHE",
+      image: "ensToche.jpg",
+    },
+    {
+      name: "WAFLE TOCHE",
+      image: "wafleToche.jpg",
+    },
+    {
+      name: "JARRASS",
+      image: "jarraAgua.jpg",
+    },
+  ];
   return (
     <div>
       <NavBarCuc />
 
       <div className="mx-4 mt-24 mb-52">
+        <MenuSlider items={slider} />
         <MenuConHelado title={data.conHelado.title} items={data.conHelado.items} />
 
         <MenuEnCopas title={data.enCopas.title} items={data.enCopas.items} />
