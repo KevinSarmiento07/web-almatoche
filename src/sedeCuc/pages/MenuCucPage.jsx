@@ -374,7 +374,7 @@ export const MenuCucPage = () => {
   const slider = [
     {
       name: "ENSALADA TOCHE",
-      image: "ensToche.jpg",
+      image: "ensToche2.jpg",
     },
     {
       name: "WAFLE TOCHE",

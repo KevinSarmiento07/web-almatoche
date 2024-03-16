@@ -8,6 +8,7 @@ import { MenuBebidas } from "../components/MenuBebidas";
 import { MenuAdiciones } from "../components/MenuAdiciones";
 import { NavBarVill } from "../components/NavBarVill";
 import { MenuCoffee } from "../components/MenuCoffee";
+import { MenuSlider } from "../components/MenuSlider";
 export const MenuVillPage = () => {
   const data = {
     conHelado: {
@@ -488,11 +489,27 @@ export const MenuVillPage = () => {
       },
     },
   };
+
+  const slider = [
+    {
+      name: "ENSALADA TOCHE",
+      image: "ensToche2.jpg",
+    },
+    {
+      name: "WAFLE TOCHE",
+      image: "wafleToche.jpg",
+    },
+    {
+      name: "JARRAS",
+      image: "jarraAgua.jpg",
+    },
+  ];
   return (
     <div>
       <NavBarVill />
 
       <div className="mx-4 mt-24 mb-52">
+        <MenuSlider items={slider} />
         <MenuConHelado title={data.conHelado.title} items={data.conHelado.items} />
 
         <MenuEnCopas title={data.enCopas.title} items={data.enCopas.items} />

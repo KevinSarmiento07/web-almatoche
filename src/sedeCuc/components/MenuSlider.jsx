@@ -4,9 +4,9 @@ import Carousel from "react-material-ui-carousel";
 export const MenuSlider = ({ items = [] }) => {
   return (
     <div style={{ marginTop: "50px", color: "#494949" }}>
-      <div className="text-start my-3 bg-[#FCE480] w-max py-1 px-2 rounded-lg">
+      <div className="text-center my-3 bg-[#FCE480] w-auto py-1 px-2 rounded-lg">
         <Typography variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={800} color={"black"}>
-          PRODUCTOS ESTRELLA*
+          PRODUCTOS ESTRELLA
         </Typography>
       </div>
       <Carousel className="SecondExample w-full h-80 h-[390px]" duration={100} navButtonsAlwaysVisible>
