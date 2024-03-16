@@ -24,3 +24,20 @@ div.paper-slider {
 .css-1m9128y {
   margin-top: 50px !important;
 }
+
+@media (min-width: 768px) {
+  .css-1f8sh1y {
+    height: 450px;
+  }
+  .css-1l7c0cy div div div {
+    height: 450px;
+  }
+
+  .Project {
+    background-color: #f8eec6 !important;
+  }
+  .css-dnaazg-MuiCardMedia-root {
+    background-size: contain !important;
+    border-radius: 10px !important;
+  }
+}

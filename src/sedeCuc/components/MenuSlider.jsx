@@ -9,7 +9,7 @@ export const MenuSlider = ({ items = [] }) => {
           PRODUCTOS ESTRELLA
         </Typography>
       </div>
-      <Carousel className="SecondExample w-full  h-[390px] md:h-[500px]" duration={100} navButtonsAlwaysVisible>
+      <Carousel className="SecondExample w-full  h-[390px] md:h-[500px] " duration={100} navButtonsAlwaysVisible>
         {items.map((item, index) => {
           return <Project item={item} key={index} />;
         })}
@@ -22,7 +22,7 @@ export const MenuSlider = ({ items = [] }) => {
 function Project({ item }) {
   return (
     <Paper className="Project paper-slider" elevation={10} sx={{ height: "100%", borderRadius: "20px", border: "solid", borderColor: "blanchedalmond" }}>
-      <CardMedia image={`/images/menu/${item.image}`} alt={item.image} sx={{ backgroundSize: "cover", borderRadius: 5 }}>
+      <CardMedia image={`/images/menu/${item.image}`} alt={item.image} sx={{ backgroundSize: "cover", borderRadius: 5, md: { backgroundSize: "contain" } }}>
         <br />
         <div></div>
       </CardMedia>
