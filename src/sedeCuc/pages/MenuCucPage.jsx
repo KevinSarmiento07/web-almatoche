@@ -381,7 +381,7 @@ export const MenuCucPage = () => {
       image: "wafleToche.jpg",
     },
     {
-      name: "JARRASS",
+      name: "JARRAS",
       image: "jarraAgua.jpg",
     },
   ];
