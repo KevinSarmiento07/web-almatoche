@@ -4,7 +4,7 @@ import FooterPage from "./FooterPage";
 export const BasePage = () => {
   return (
     <div className="h-full bg-auto bg-center ">
-      <div className="flex flex-col mx-auto h-auto">
+      <div className="flex flex-col mx-auto h-full">
         <div className=" mx-auto my-5">
           <img src="/images/logo.jpg" className="rounded-full" width={225} height={150} />
         </div>
