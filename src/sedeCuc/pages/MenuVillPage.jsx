@@ -508,7 +508,7 @@ export const MenuVillPage = () => {
     <div>
       <NavBarVill />
 
-      <div className="mx-4 mt-24 mb-52">
+      <div className="mx-4 mt-24 mb-24">
         <MenuSlider items={slider} />
         <MenuConHelado title={data.conHelado.title} items={data.conHelado.items} />
 
