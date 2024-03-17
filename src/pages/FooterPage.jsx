@@ -62,6 +62,8 @@ const FooterPage = () => {
           >
             <div>
               <Button
+                size="small"
+                style={{ borderRadius: 100, padding: 5, border: "solid", borderColor: "whitesmoke", marginBottom: "5px" }}
                 className="cursor-pointer w-full border-yellow-500 border-r-[1px] border-t-[1px] border-l-[1px]  border-b-[6px]"
                 href="https://api.whatsapp.com/send/?phone=%2B573102611139&text&type=phone_number&app_absent=0"
                 target="_blank"
@@ -73,7 +75,7 @@ const FooterPage = () => {
             </div>
             <Button
               className="cursor-pointer "
-              style={{ borderRadius: 100, padding: 5 }}
+              style={{ borderRadius: 100, padding: 5, border: "solid", borderColor: "whitesmoke" }}
               href="https://api.whatsapp.com/send/?phone=%2B573207446550&text&type=phone_number&app_absent=0"
               target="_blank"
             >
