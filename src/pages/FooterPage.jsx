@@ -45,6 +45,7 @@ const FooterPage = () => {
             <img src="/images/whatsapp.png" width={50} />
           </button>
           <Popover
+            className="popoverF"
             id={id}
             open={open}
             anchorEl={anchorEl}
@@ -58,7 +59,6 @@ const FooterPage = () => {
               horizontal: "left",
             }}
             sx={{ overflowY: "hidden" }}
-            style={{ backgroundColor: "inherit" }}
           >
             <div>
               <Button

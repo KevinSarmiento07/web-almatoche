@@ -42,7 +42,7 @@ div.paper-slider {
   }
 }
 
-.css-3bmhjh-MuiPaper-root-MuiPopover-paper {
+.MuiPopover-paper {
   background-color: #2a1e16 !important;
   border-radius: 10px !important;
   overflow-y: hidden !important;
