@@ -62,26 +62,32 @@ const FooterPage = () => {
           >
             <div>
               <Button
-                size="small"
-                style={{ borderRadius: 100, padding: 5, border: "solid", borderColor: "whitesmoke", marginBottom: "5px" }}
+                size="medium"
+                style={{
+                  borderRadius: 100,
+                  padding: 5,
+                  border: "solid",
+                  borderColor: "whitesmoke",
+                  marginBottom: "5px",
+                  fontFamily: "'Poppins', sans-serif",
+                  textTransform: "none",
+                  color: "white",
+                  fontWeight: 500,
+                }}
                 className="cursor-pointer w-full border-yellow-500 border-r-[1px] border-t-[1px] border-l-[1px]  border-b-[6px]"
                 href="https://api.whatsapp.com/send/?phone=%2B573102611139&text&type=phone_number&app_absent=0"
                 target="_blank"
               >
-                <Typography textTransform="none" variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={500} color={"white"} style={{ borderRadius: 10, padding: 5 }}>
-                  Cúcuta
-                </Typography>
+                Cúcuta
               </Button>
             </div>
             <Button
               className="cursor-pointer "
-              style={{ borderRadius: 100, padding: 5, border: "solid", borderColor: "whitesmoke" }}
+              style={{ borderRadius: 100, padding: 5, border: "solid", borderColor: "whitesmoke", fontFamily: "'Poppins', sans-serif", textTransform: "none", color: "white", fontWeight: 500 }}
               href="https://api.whatsapp.com/send/?phone=%2B573207446550&text&type=phone_number&app_absent=0"
               target="_blank"
             >
-              <Typography textTransform="none" variant="h5" fontFamily={"'Poppins', sans-serif"} fontWeight={500} color={"white"} style={{ borderRadius: 10, padding: 5 }}>
-                Villavicencio
-              </Typography>
+              Villavicencio
             </Button>
           </Popover>
         </div>
