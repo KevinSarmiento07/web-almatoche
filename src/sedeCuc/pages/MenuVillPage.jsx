@@ -505,7 +505,7 @@ export const MenuVillPage = () => {
     },
   ];
   return (
-    <div>
+    <div className="test">
       <NavBarVill />
 
       <div className="mx-4 mt-24 mb-24">
