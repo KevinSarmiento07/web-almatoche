@@ -29,7 +29,7 @@ export const NavBarCuc = () => {
         behavior: "smooth",
         block: "start",
       });
-      setTimeout(callback, 500);
+      setTimeout(callback, 1000);
     }
   }
 
