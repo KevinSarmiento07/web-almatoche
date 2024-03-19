@@ -8,7 +8,7 @@ export default {
       },
     },
     screens: {
-      xs: { max: "380px" },
+      xs: { max: "391px" },
     },
   },
   plugins: [],

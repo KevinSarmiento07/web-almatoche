@@ -42,7 +42,7 @@ div.paper-slider {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 391px) {
   .titulo-base {
     font-size: 1.875rem !important;
     line-height: 2rem !important;
