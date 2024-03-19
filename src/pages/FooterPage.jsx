@@ -18,7 +18,7 @@ const FooterPage = () => {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
   return (
-    <Box className="footer" component="footer" sx={{ py: 1, px: 2, mt: "auto", backgroundColor: "#2A1E16", left: 0, bottom: 0, position: "relative", width: "100%", marginTop: "30px" }}>
+    <Box className="footer" component="footer" sx={{ py: 1, px: 2, mt: "auto", backgroundColor: "#2A1E16", left: 0, bottom: 0, position: "relative", width: "100%" }}>
       <Container maxWidth="sm">
         <div>
           <Typography variant="h6" color="white" fontFamily={"revert"} fontSize={"large"}>

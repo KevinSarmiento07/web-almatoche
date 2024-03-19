@@ -42,6 +42,13 @@ div.paper-slider {
   }
 }
 
+@media (max-width: 380px) {
+  .titulo-base {
+    font-size: 1.875rem !important;
+    line-height: 2rem !important;
+  }
+}
+
 .MuiPopover-paper {
   background-color: #2a1e16 !important;
   border-radius: 10px !important;

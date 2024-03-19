@@ -7,6 +7,9 @@ export default {
         sans: ["Poppins", "sans-serif"],
       },
     },
+    screens: {
+      xs: { max: "380px" },
+    },
   },
   plugins: [],
 };
