@@ -164,8 +164,8 @@ export const MenuCucPage = () => {
             },
             {
               name: "PASO 3",
-              description: "(Elige helados disponibles de preferencia)",
-              items: ["Vainilla", "Fresa", "Mora", "Arequipe", "Macadamia", "Chocolate", "Maracuyá", "Mandarina"],
+              description: "(Elige 1 helado)",
+              items: ["Elige helados disponibles de preferencia"],
             },
           ],
         },
