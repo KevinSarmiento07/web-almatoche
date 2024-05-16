@@ -53,7 +53,7 @@ export const MenuWafles = ({ title, items = [] }) => {
                               <Typography component="div" variant="h5" fontFamily={"'Poppins', sans-serif"}>
                                 {value.name}
                               </Typography>
-                              <Typography variant="subtitle1" color="text.secondary" component="div" fontFamily={"'Poppins', sans-serif"}>
+                              <Typography variant="subtitle1" sx={{ contain: "inline-size" }} color="text.secondary" component="div" fontFamily={"'Poppins', sans-serif"}>
                                 {value.description}
                               </Typography>
                             </CardContent>

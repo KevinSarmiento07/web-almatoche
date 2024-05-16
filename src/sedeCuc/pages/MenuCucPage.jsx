@@ -155,7 +155,7 @@ export const MenuCucPage = () => {
             {
               name: "PASO 1",
               description: "(Elige una salsa)",
-              items: ["Arequipe", "Mora", "Avellana", "Leche Condensada"],
+              items: ["Arequipe", "Avellana", "Leche Condensada"],
             },
             {
               name: "PASO 2",
@@ -164,7 +164,7 @@ export const MenuCucPage = () => {
             },
             {
               name: "PASO 3",
-              description: "(Elige un helado)",
+              description: "(Elige helados disponibles de preferencia)",
               items: ["Vainilla", "Fresa", "Mora", "Arequipe", "Macadamia", "Chocolate", "Maracuyá", "Mandarina"],
             },
           ],
@@ -214,11 +214,11 @@ export const MenuCucPage = () => {
         size: [
           {
             name: "Batido 16 onz en agua",
-            price: 8000,
+            price: 7000,
           },
           {
             name: "Batido 16 onz en leche",
-            price: 9500,
+            price: 8000,
           },
         ],
       },
@@ -254,29 +254,29 @@ export const MenuCucPage = () => {
         title: "JUGOS NATURALES",
         description: "Pide nuestros Jugos Naturales en agua o leche:",
         image: "jugoNat.jpg",
-        fruits: ["Fresa", "Maracuyá", "Lulo", "Banano", "Frutos Rojos", "Mora", "Mango", "Guanabana"],
+        fruits: ["Fresa", "Maracuyá", "Lulo", "Banano", "Tomate de árbol", "Papaya", "Mora", "Mango", "Guanabana"],
         items: [
           {
             name: "Personal en agua",
             description: "Vaso de 16 onz.",
-            price: 6000,
+            price: 5000,
           },
           {
             name: "Personal en leche",
             description: "Vaso de 16 onz.",
-            price: 7000,
+            price: 6000,
             image: "jugoLeche.jpg",
           },
           {
             name: "Jarra en agua",
             description: "Un litro de jugo natural.",
-            price: 12000,
+            price: 10000,
             image: "jarraAgua.jpg",
           },
           {
             name: "Jarra en leche",
             description: "Un litro de jugo natural.",
-            price: 14000,
+            price: 13000,
           },
         ],
       },
@@ -291,17 +291,17 @@ export const MenuCucPage = () => {
           {
             name: "Granizado en agua*",
             description: "Vaso de 16 onz. *Se prepara con las mismas frutas de los jugos naturales.",
-            price: 7000,
+            price: 6000,
           },
           {
             name: "Granizado en leche*",
             description: "Vaso de 16 onz. *Se prepara con las mismas frutas de los jugos naturales.",
-            price: 8000,
+            price: 7000,
           },
           {
             name: "Cerezada",
             description: "Vaso de 16 onz preparado en agua con limón natural y cerezas en almíbar.",
-            price: 8000,
+            price: 7500,
           },
           {
             name: "Milo Frío",
@@ -316,19 +316,19 @@ export const MenuCucPage = () => {
           {
             name: "Limonada en Soda",
             description: "Vaso de 16onz preparada en soda con limón nartural.",
-            price: 8000,
+            price: 7000,
             image: "sodaLimo.jpg",
           },
           {
             name: "Hierbabuena en Soda",
             description: "Vaso de 16onz preparada en soda con limón natural y hojas de la planta reflescante hierbabuena.",
-            price: 8500,
+            price: 8000,
             image: "sodaLim.jpg",
           },
           {
             name: "Cerezada en Soda",
             description: "Vaso de 16onz preparada en soda con limón natural y cerezas en almíbar.",
-            price: 8900,
+            price: 8500,
             image: "sodaCer.jpg",
           },
         ],
