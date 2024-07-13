@@ -151,13 +151,13 @@ export const MenuVillPage = () => {
         {
           name: "Ensalada Ligera",
           description: "Una bola de helado de preferenciapara complementar.",
-          price: 14000,
+          price: 14900,
           image: "ensLigera.jpg",
         },
         {
           name: "Ensalada Toche",
           description: "Dos bolas de helado de preferencia para complementar.",
-          price: 17000,
+          price: 18000,
           image: "ensToche.jpg",
         },
       ],
@@ -209,7 +209,7 @@ export const MenuVillPage = () => {
         {
           name: "Ensalada de Frutas con Granola",
           description: "Ensalada de banano, mango, fresa, papaya, melón, arándanos, manzana y kiwi.",
-          price: 12000,
+          price: 13000,
           image: "ensGranola.jpg",
         },
       ],
@@ -357,7 +357,7 @@ export const MenuVillPage = () => {
           {
             name: "Limonada de Coco",
             description: "Vaso de 16 onz preparado en leche.",
-            price: 8000,
+            price: 10000,
           },
           {
             name: "Piña Colada",
