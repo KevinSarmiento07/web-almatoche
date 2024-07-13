@@ -74,13 +74,13 @@ export const MenuCucPage = () => {
         },
         {
           name: "Copa Melocotón",
-          description: "Melocotones en almíbar con crema chantilly y dos bolas de helado de macadamia.",
+          description: "Melocotones en almíbar con crema chantilly y dos bolas de helado de preferencia.",
           price: 12000,
           image: "copaMel.jpg",
         },
         {
           name: "Copa Toche",
-          description: "Helado de vainilla, maracuyá y mora con fruta (banano, fresa y mango), crema de la casa y crema chantilly.",
+          description: "Tres bolas de helado de preferencia con fruta (banano, fresa y mango), crema de la casa y crema chantilly.",
           price: 14000,
           image: "copaToche.jpg",
         },
@@ -171,7 +171,7 @@ export const MenuCucPage = () => {
         },
         {
           name: "Waffle Clasico",
-          description: "Waffle, una bola de helado de preferencia y elige una salsa (arequipe, mora, chocolate, avellana o leche condensada).",
+          description: "Waffle, una bola de helado de preferencia y elige una salsa (arequipe, chocolate, avellana o leche condensada).",
           price: 14900,
           steps: [],
         },
