@@ -9,6 +9,7 @@ import { MenuSaludable } from "../components/MenuSaludable";
 import { MenuBebidas } from "../components/MenuBebidas";
 import { MenuAdiciones } from "../components/MenuAdiciones";
 import { MenuSlider } from "../components/MenuSlider";
+import { MenuDesayunos } from "../components/MenuDesayunos";
 
 export const MenuCucPage = () => {
   const data = {
@@ -92,10 +93,22 @@ export const MenuCucPage = () => {
         },
         {
           name: "Fresas con Crema*",
-          description: "Cono o vaso de dos bolas de helado de preferencia.",
+          description: "Fresas, con crema chantilly y crema de la casa.",
           price: 10900,
           image: "fresasCrema.jpg",
         },
+        {
+          name: "Fresas con crema y Brownie*",
+          description: "Fresas, crema chantillly, crema de leche y brownie. Puedes adicionar helado por $3.000",
+          price: 13900,
+          image: "fresasCremaBrownie.jpg",
+        },
+        {
+          name: "Vaso tropical*",
+          description: "(Apartir de 6 unidades $11.000) Fruta, crema de la casa, una bola de helado de vainilla y granola",
+          price: 13000,
+          image: "vasoTropical.jpg",
+        }
       ],
     },
     malteadas: {
@@ -369,9 +382,31 @@ export const MenuCucPage = () => {
         ],
       },
     },
+    desayunos: {
+      title: "DESAYUNOS / MEDIA TARDE SORPRESA",
+      items: {
+        title: "DESAYUNOS SORPRESA",
+        price: 70000,
+        items: [
+          {
+            image: "desayunoSor.jpg",
+          },
+          {
+            image: "desayunoSor2.jpg",
+          },
+          {
+            image: "desayunoSor3.jpg",
+          },
+        ],
+      }
+    },
   };
 
   const slider = [
+    {
+      name: "DESAYUNOS SORPRESA",
+      image: "desayunoSor.jpg",
+    },
     {
       name: "ENSALADA TOCHE",
       image: "ensToche2.jpg",
@@ -406,6 +441,8 @@ export const MenuCucPage = () => {
         <MenuAdiciones title={data.adiciones.title} items={data.adiciones.items} />
 
         <MenuBebidas title={data.jugos.title} naturales={data.jugos.naturales} refrescantes={data.jugos.refrescantes} sodas={data.jugos.sodas} other={data.jugos.other} />
+
+        <MenuDesayunos title={data.desayunos.title} items={data.desayunos.items} />
       </div>
     </div>
   );
