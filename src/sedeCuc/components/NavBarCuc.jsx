@@ -42,6 +42,9 @@ export const NavBarCuc = () => {
         <li className="tab " name="enCopas">
           EN COPAS
         </li>
+        <li className="tab " name="soloFresas">
+          SOLO FRESAS
+        </li>
         <li className="tab" name="malteadas">
           MALTEADAS
         </li>
