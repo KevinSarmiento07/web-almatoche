@@ -101,18 +101,19 @@ export const MenuCucPage = () => {
           name: "Fresas Clásicas",
           description: "Fresas con crema de leche, crema chantilly y salsa de elección.",
           price: 10900,
-          image: "fresasCrema.jpg",
+          image: "fresaClasica.jpg",
         },
         {
           name: "Fresas con Brownie",
           description: "Fresas con crema de leche, crema chantilly, brownie y salsa de elección.",
           price: 14900,
-          image: "fresasCremaBrownie.jpg",
+          image: "fresaConBrownie.jpg",
         },
         {
           name: "Fresas con Queso",
           description: "Fresas con crema de leche, crema chantilly, queso y salsa de elección.",
           price: 15500,
+          image: "fresasConQueso.jpg",
         },
         {
           name: "Fresas con Melocotón",
@@ -171,7 +172,7 @@ export const MenuCucPage = () => {
           name: "Ensalada Megaoche",
           description: "Tres bolas de helado de preferencia para complementar.",
           price: 23900,
-          image: "ensToche.jpg",
+          image: "ensMegaToche.jpg",
         }
       ],
     },
@@ -182,7 +183,7 @@ export const MenuCucPage = () => {
           name: "Waffle Ármalo Como Quieras",
           description: "Con tres sencillos pasos tendrás el waffle perfecto:",
           price: 17900,
-          image: "waflesArm.jpg",
+          image: "wafleArmalo.jpg",
           steps: [
             {
               name: "PASO 1",
@@ -206,6 +207,7 @@ export const MenuCucPage = () => {
           description: "Waffle, una bola de helado de preferencia y elige una salsa (arequipe, chocolate, avellana o leche condensada).",
           price: 15900,
           steps: [],
+          image: "wafleClasico.jpg",
         },
         {
           name: "Waffle Toche",
