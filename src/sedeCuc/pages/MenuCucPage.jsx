@@ -219,14 +219,8 @@ export const MenuCucPage = () => {
       ],
     },
     saludable: {
-      title: "SALUDABLE",
+      title: "BATIDOS",
       items: [
-        {
-          name: "Ensalada de Frutas con Granola",
-          description: "Ensalada de banano, mango, fresa, papaya, melón, arándanos, manzana y kiwi.",
-          price: 13000,
-          image: "ensGranola.jpg",
-        },
       ],
       batidos: {
         title: "BATIDOS",
@@ -288,7 +282,7 @@ export const MenuCucPage = () => {
         title: "JUGOS NATURALES",
         description: "Pide nuestros Jugos Naturales en agua o leche:",
         image: "jugoNat.jpg",
-        fruits: ["Fresa", "Maracuyá", "Lulo", "Banano", "Tomate de árbol", "Papaya", "Mora", "Mango", "Guanabana"],
+        fruits: ["Fresa", "Lulo", "Banano", "Papaya", "Mango", "Guanabana"],
         items: [
           {
             name: "Personal en agua",
